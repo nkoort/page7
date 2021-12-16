@@ -988,8 +988,53 @@ button {
   width: 40%;
 }
 
+.block5 {
+  position: relative;
+  max-height: 550px;
+  overflow: hidden;
+}
+.block5__img-container {
+  min-width: 100%;
+  position: relative;
+}
+.block5__img-container > img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block5__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  margin: 3% 0 0 0;
+}
+.footer__clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3% 0;
+  max-height: 130px;
+}
+.footer__clients > img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer__copyright {
+  text-align: center;
+  margin: 1.5% 0;
+  max-height: 65x;
 }
