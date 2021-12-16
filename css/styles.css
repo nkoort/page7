@@ -427,7 +427,19 @@ button {
 }
 
 .block2__container1 {
+  padding: 0px 5% 0px 5% 0px;
   text-align: center;
+}
+.block2__container1-text {
+  opacity: 0.7;
+  font-family: "Open Sans";
+  font-size: 19.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #515151;
+}
+.block2__container1-text > p {
+  margin: 0px 0px 3% 0px;
 }
 .block2__container2-content {
   display: -webkit-box;

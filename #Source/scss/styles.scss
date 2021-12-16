@@ -272,11 +272,23 @@ button {
 
 .block2 {
 	&__container1 {
+		padding: 0px 5% 0px 5% 0px;
 		text-align: center;
 	}
 	&__container1-img {}
 	&__container1-title {}
-	&__container1-text {}
+	&__container1-text {
+		opacity: 0.7;
+		font-family: 'Open Sans';
+		font-size: 19.2px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #515151;
+		
+		&>p {
+			margin: 0px 0px 3% 0px;
+		}
+	}
 	&__container2 {}
 	&__container2-items {}
 	&__container2-items-links {}
