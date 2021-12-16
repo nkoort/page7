@@ -420,26 +420,218 @@ button {
 .block3 {
 	&__items {
 		display: flex;
-		
+
+		@media (max-width:900px) {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		display: flex;
 		width: 100%;
-
+		padding: 7%;
+		
+		@media (max-width:678px) {
+			flex-direction: column;
+			align-items: center;
+		}
 		&:first-child {
 			background-color: #e2f8ff;
 		}
 		&:last-child {
 			background-color: #f5f9eb;
+			
+			&> .__item-content > .__item-content-button {
+				background-color: #add136;
+			}
 		}
 	}
-	&__item-img {}
-	&__item-content {}
-	&__item-content-title {}
-	&__item-content-text {}
-	&__item-content-button {}
-}
+	&__item-img {
+		margin: 7% 10% 0 0;
 
+		@media (max-width:900px) {
+			position: relative;
+			margin: 7% 25% 0 0;
+		}
+		
+		&>img {
+
+			@media (max-width:900px) {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			@media (max-width: 678px) {
+				position: relative;
+			}
+			
+		}
+
+		@media (max-width:678px) {
+			margin: 0 0 5% 0;
+		}
+	}
+	&__item-content {
+
+		@media (max-width:678px) {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__item-content-title {
+		font-family: 'Montserrat';
+		font-size: 1.65em;
+		line-height: 1.2;
+		color: #515151;
+		margin: 0 0 7% 0;
+	}
+	&__item-content-text {
+		font-family: 'OpenSans';
+		font-size: 1.22em;
+		line-height: 1.2;
+		color: #515151;
+		margin: 0 0 7% 0;
+	}
+	&__item-content-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 187px;
+		height: 51px;
+		background-color: #26a6d1;
+		border-radius: 10px;
+
+		@media (max-width:678px) {
+			width: 187px*0.8;
+			height: 51px*0.8;	
+		}
+		&>button {
+			font-family: 'OpenSans-Semibold';
+			font-size: 1.1em;
+			color: #ffffff;
+		}
+	}
+}
+.block3 > div >:nth-child(2) > .block3__item-content > .block3__item-content-button {
+	background-color: #add136;
+}
+.block4 {
+	padding: 7% 10% 7% 10%;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		margin: 0 0 7% 0;
+	}
+	&__top-information {
+		display: flex;
+		flex-direction: column;
+		padding: 0 15% 0 0;
+	}
+	&__top-information-title {
+		font-family: 'OpenSans-Semibold';
+		font-size: 29.2px;
+		line-height: 1.2;
+		color: #515151;
+		margin: 0 0 3% 0;
+	}
+	&__top-information-text {
+		font-family: 'OpenSans';
+		font-size: 17.2px;
+		line-height: 1.2;
+		color: #8f8f8f;
+	}
+	&__top-become {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 183px;
+		height: 52px;
+		opacity: 0.41;
+		background-color: #ffffff;
+		border: 1px solid #515151;
+		border-radius: 15px;
+	}
+	&__content {}
+	&__content-items {
+		display: flex;
+	}
+	&__content-item {
+		flex: 1 1 33.333%;
+		padding: 0 2.5% 0 2.5%;
+		&:last-child {
+			// padding: 0;
+		}
+	}
+	&__content-item-img {
+		min-width: 100%;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px 10px 0 0;
+		&>img {
+			width: 100%;
+			height: auto;
+			max-height: 225px;
+			object-fit: cover;
+			position: relative;
+		}
+		&.new::before {
+			content: '';
+			position: absolute;
+			top: -15%;
+			left: -15%;
+			z-index: 1;
+			background-color: #add136;
+			width: 35%;
+			height: 35%;
+			transform: rotate(-45deg);
+		}
+		&.new::after {
+			content: 'NEW';
+			position: absolute;
+			top: 4%;
+			left: 3%;
+			z-index: 2;
+			width: 15%;
+			height: 15%;
+			transform: rotate(-45deg);
+			font-family: Montserrat;
+			font-size: 1.05em;
+			color: #ffffff;
+		}
+	}
+	&__content-item-img-price {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		width: 43%;
+		height: 15%;
+		background-color: #26a6d1;
+		font-family: 'Open Sans';
+		font-size: 1.12em;
+		line-height: 1.2;
+		color: #ffffff;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			content: 'From GBP';
+			margin: 0 5px 0 0;
+		}
+	}
+	&__content-item-description {}
+	&__content-item-description-title {}
+	&__content-item-description-info {}
+	&__content-item-description-line {}
+	&__content-item-description-rating {}
+	&__content-item-description-subdescription {}
+	&__content-item-description-subdescription-left {}
+	&__content-item-description-subdescription-right {}
+	&__content-item-see-detail {}
+}
 
 
 .footer {
