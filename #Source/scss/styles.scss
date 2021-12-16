@@ -241,6 +241,9 @@ button {
 		@media (max-width:640px) {
 			font-size: 2.5em;
 		}
+		@media (max-width:440px) {
+			font-size: 1.5em;
+		}
 	}
 	&__content-button {
 		width: 254px;
@@ -255,9 +258,13 @@ button {
 			color: #ffffff;
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 950px) {
 			width: 254px*0.7;
 			height: 73px*0.7;
+		}
+		@media (max-width: 440px) {
+			width: 254px*0.5;
+			height: 73px*0.4;
 		}
 		
 	}

@@ -389,6 +389,11 @@ button {
     font-size: 2.5em;
   }
 }
+@media (max-width: 440px) {
+  .block1__content-title {
+    font-size: 1.5em;
+  }
+}
 .block1__content-button {
   width: 254px;
   height: 73px;
@@ -408,10 +413,16 @@ button {
   font-size: 1.35em;
   color: #ffffff;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .block1__content-button {
     width: 177.8px;
     height: 51.1px;
+  }
+}
+@media (max-width: 440px) {
+  .block1__content-button {
+    width: 127px;
+    height: 29.2px;
   }
 }
 
