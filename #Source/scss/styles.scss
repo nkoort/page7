@@ -270,6 +270,27 @@ button {
 	}
 }
 
+.block2 {
+	&__container1 {
+		text-align: center;
+	}
+	&__container1-img {}
+	&__container1-title {}
+	&__container1-text {}
+	&__container2 {}
+	&__container2-items {}
+	&__container2-items-links {}
+	&__container2-items-link {}
+	&__container2-content {
+		display: flex;
+	}
+	&__container2-content-img {}
+	&__container2-content-body {}
+	&__container2-content-body-title {}
+	&__container2-content-body-text {}
+}
+
+
 .footer {
 	grid-row: 3/4;
 }
