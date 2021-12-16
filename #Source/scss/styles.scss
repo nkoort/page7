@@ -272,17 +272,25 @@ button {
 
 .block2 {
 	&__container1 {
-		padding: 0px 5% 0px 5% 0px;
+		padding: 7% 14% 7% 14%;
 		text-align: center;
 	}
-	&__container1-img {}
-	&__container1-title {}
+	&__container1-img {
+		margin: 0px 0px 5% 0px;
+	}
+	&__container1-title {
+		font-family: 'OpenSans-Semibold';
+		font-size: 2.2em;
+		text-transform: uppercase;
+		color: #515151;
+		margin: 0px 0px 5% 0px;
+		padding: 0 10% 0 10%;
+	}
 	&__container1-text {
 		opacity: 0.7;
-		font-family: 'Open Sans';
-		font-size: 19.2px;
-		line-height: 1.2;
-		font-weight: 400;
+		font-family: 'OpenSans';
+		font-size: 1.37em;
+		line-height: 1.4;
 		color: #515151;
 		
 		&>p {
@@ -291,15 +299,82 @@ button {
 	}
 	&__container2 {}
 	&__container2-items {}
-	&__container2-items-links {}
-	&__container2-items-link {}
+	&__container2-items-links {
+		display: flex;
+		justify-content: space-around;
+		margin: 0 5% 5% 5%;
+	}
+	&__container2-items-link {
+		font-family: 'OpenSans-Light';
+		font-size: 33.2px;
+		line-height: 1.2;
+		color: #656565;
+		
+
+		&:first-child::before {
+			content: '1';
+			position: absolute;
+			text-align: center;
+			width: 43px;
+			height: 43px;
+			background-color: #add136;
+			border-radius: 50%;
+			margin: 0px 0px 0px -5%;
+			font-family: 'OpenSans-Semibold';
+			font-size: 1em;
+			color: #ffffff;
+		}
+		&:last-child::before {
+			content: '3';
+			position: absolute;
+			text-align: center;
+			width: 43px;
+			height: 43px;
+			background-color: #5f5f5f;
+			font-family: 'OpenSans-Semibold';
+			font-size: 1em;
+			color: #ffffff;
+			border-radius: 50%;
+			margin: 0px 0px 0px -5%;
+		}
+		&:nth-child(2)::before {
+			content: '2';
+			position: absolute;
+			text-align: center;
+			width: 43px;
+			height: 43px;
+			background-color: #5f5f5f;
+			font-family: 'OpenSans-Semibold';
+			font-size: 1em;
+			color: #ffffff;
+			border-radius: 50%;
+			margin: 0px 0px 0px -5%;
+		}
+	}
 	&__container2-content {
+		padding: 0% 14% 7% 14%;
 		display: flex;
 	}
-	&__container2-content-img {}
+	&__container2-content-img {
+		margin-right: 10%;
+		display: flex;
+		align-items: center;
+	}
 	&__container2-content-body {}
-	&__container2-content-body-title {}
-	&__container2-content-body-text {}
+	&__container2-content-body-title {
+		margin-bottom: 5%;
+		font-family: 'OpenSans';
+		font-size: 25.2px;
+		line-height: 1.2;
+		color: #add136;
+	}
+	&__container2-content-body-text {
+		opacity: 0.67;
+		font-family: 'OpenSans';
+		font-size: 17.2px;
+		line-height: 1.2;
+		color: #606060;
+	}
 }
 
 
