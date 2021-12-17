@@ -990,14 +990,92 @@ button {
 
 .block5 {
   position: relative;
-  max-height: 550px;
-  overflow: hidden;
+  height: 100%;
+  max-height: 570px;
+}
+@media (max-width: 1440px) {
+  .block5 {
+    font-size: 0.9em;
+    max-height: 500px;
+  }
+}
+@media (max-width: 1350px) {
+  .block5 {
+    font-size: 0.8em;
+    max-height: 450px;
+  }
+}
+@media (max-width: 1150px) {
+  .block5 {
+    font-size: 0.7em;
+    max-height: 400px;
+  }
+}
+@media (max-width: 1050px) {
+  .block5 {
+    max-height: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .block5 {
+    max-height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .block5 {
+    max-height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .block5 {
+    max-height: 200px;
+  }
 }
 .block5__img-container {
   min-width: 100%;
   position: relative;
+  z-index: -1;
+  max-height: 570px;
+}
+@media (max-width: 1350px) {
+  .block5__img-container {
+    max-height: 450px;
+  }
+}
+@media (max-width: 1440px) {
+  .block5__img-container {
+    max-height: 500px;
+  }
+}
+@media (max-width: 1150px) {
+  .block5__img-container {
+    font-size: 0.7em;
+    max-height: 400px;
+  }
+}
+@media (max-width: 1050px) {
+  .block5__img-container {
+    max-height: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .block5__img-container {
+    max-height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .block5__img-container {
+    max-height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .block5__img-container {
+    display: none;
+  }
 }
 .block5__img-container > img {
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
   min-width: 100%;
   max-width: 100%;
   height: auto;
@@ -1008,14 +1086,122 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 5em;
+  text-align: center;
+  padding: 3% 12% 3% 12%;
+}
+@media (max-width: 600px) {
+  .block5__content {
+    position: relative;
+  }
+}
+.block5__content-header {
+  margin: 0 0 5% 0;
+}
+.block5__content-header-title {
+  font-family: "OpenSans-Semibold";
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: #9ec02d;
+  margin: 0 0 3% 0;
+}
+.block5__content-header-subtitle {
+  font-family: "OpenSans";
+  font-size: 1.37em;
+  line-height: 1.2;
+  color: #949494;
+  padding: 0 10%;
+}
+.block5__content-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block5__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 397px;
+}
+.block5__content-item-description {
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 20px;
+  margin: 0 0 10% 0;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .block5__content-item-description {
+    max-width: 300px;
+  }
+}
+.block5__content-item-description::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+  width: 40px;
+  height: 30px;
+  -webkit-clip-path: polygon(99% 0, 41% 100%, 100% 100%);
+          clip-path: polygon(99% 0, 41% 100%, 100% 100%);
+  background-color: #fff;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+@media (max-width: 900px) {
+  .block5__content-item-description::before {
+    display: none;
+  }
+}
+.block5__content-item-description-title {
+  margin: 0 0 5% 0;
+  font-family: "OpenSans-Semibold";
+  font-size: 1.51em;
+  color: #9ec02d;
+}
+.block5__content-item-description-text {
+  font-family: "OpenSans";
+  font-size: 0.94em;
+  line-height: 1.4;
+  color: #848484;
+}
+.block5__content-item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0% 0 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 900px) {
+  .block5__content-item-img {
+    max-height: 30px;
+    display: none;
+  }
+}
+.block5__content-item-img > img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block5__content-item-img-name {
+  font-family: Montserrat;
+  font-size: 1.1em;
+  color: #494949;
+  margin: 0 0 0 5%;
 }
 
 .footer {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  margin: 3% 0 0 0;
+  margin: 0% 0 0 0;
 }
 .footer__clients {
   display: -webkit-box;
@@ -1035,6 +1221,5 @@ button {
 }
 .footer__copyright {
   text-align: center;
-  margin: 1.5% 0;
   max-height: 65x;
 }
