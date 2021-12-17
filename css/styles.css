@@ -310,6 +310,9 @@ button {
   opacity: 0.81;
   background-color: #add136;
 }
+.header__login:hover {
+  background-color: #bdf507;
+}
 @media (max-width: 820px) {
   .header__login {
     -ms-grid-column: 2;
@@ -415,6 +418,9 @@ button {
   font-family: "OpenSans";
   font-size: 1.35em;
   color: #ffffff;
+}
+.block1__content-button:hover {
+  background-color: #526b00;
 }
 @media (max-width: 950px) {
   .block1__content-button {
@@ -719,6 +725,9 @@ button {
   background-color: #26a6d1;
   border-radius: 10px;
 }
+.block3__item-content-button:hover {
+  background-color: #038bb8;
+}
 @media (max-width: 678px) {
   .block3__item-content-button {
     width: 149.6px;
@@ -733,6 +742,9 @@ button {
 
 .block3 > div > :nth-child(2) > .block3__item-content > .block3__item-content-button {
   background-color: #add136;
+}
+.block3 > div > :nth-child(2) > .block3__item-content > .block3__item-content-button:hover {
+  background-color: #8fbb00;
 }
 
 .block4 {
@@ -797,9 +809,11 @@ button {
   min-width: 183px;
   height: 52px;
   opacity: 0.41;
-  background-color: #ffffff;
   border: 1px solid #515151;
   border-radius: 15px;
+}
+.block4__top-become:hover {
+  background-color: #aeaeae;
 }
 @media (max-width: 768px) {
   .block4__top-become {
